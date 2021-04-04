@@ -1,0 +1,19 @@
+ <div class="container-fluid">
+    <p></p>
+    <dual-list [sort]="keepSorted" [source]="source" [key]="key" [display]="display" [filter]="filter"
+      [(destination)]="confirmed" height="265px" [format]="format" [disabled]="disabled"></dual-list>
+    <ul class="nav nav-tabs" style="margin-top:50px;">
+      <li [class.active]="tab===1"><a (click)="tab=1">Arrays</a><li>
+      <li [class.active]="tab===2"><a (click)="tab=2">Format</a></li>
+      <li [class.active]="tab===3"><a (click)="tab=3">Programmatic changes</a></li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane" [class.active]="tab===1">
+        <div class="row">
+          <div class="col-sm-6" style="margin-top:32px;"><h4>Source</h4><pre><small>{{source|json}}</small></pre></div>
+          <div class="col-sm-6" style="margin-top:32px;"><h4>Confirmed</h4><pre><small>{{confirmed|json}}</small></pre></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

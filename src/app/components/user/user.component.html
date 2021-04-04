@@ -1,0 +1,64 @@
+<div style="float:right;">
+   <button [routerLink]="['/add-user']" class="btn btn-primary btn-sm">Add User</button>
+</div>
+<table class="table">
+ <thead> 
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>username</th>
+  <th>Email</th>
+  <th>status</th>
+  <th>Actions</th>
+</thead>
+ <tbody>
+    <!-- *ngFor="let item of collection | paginate: { itemsPerPage: 10, currentPage: p }" -->
+   <tr>
+     <td>fdsafasd</td>
+     <td>fdsafasd</td>
+     <td>fdsafasd</td>
+     <td>fdsafasd</td>
+     <td>fdsafasd</td>
+     <td>
+        <button class="btn btn-info btn-sm">Edit</button>
+        <button class="btn btn-danger btn-sm">Delete</button>
+      </td>
+   </tr>
+   <tr>
+      <td>fdsafasd</td>
+      <td>fdsafasd</td>
+      <td>fdsafasd</td>
+      <td>fdsafasd</td>
+      <td>fdsafasd</td>
+      <td>
+          <button class="btn btn-info btn-sm">Edit</button>
+          <button class="btn btn-danger btn-sm">Delete</button>
+        </td>
+    </tr>
+    <tr>
+        <td>fdsafasd</td>
+        <td>fdsafasd</td>
+        <td>fdsafasd</td>
+        <td>fdsafasd</td>
+        <td>fdsafasd</td>
+        <td>
+            <button class="btn btn-info btn-sm">Edit</button>
+            <button class="btn btn-danger btn-sm">Delete</button>
+          </td>
+      </tr>
+      <tr>
+          <td>fdsafasd</td>
+          <td>fdsafasd</td>
+          <td>fdsafasd</td>
+          <td>fdsafasd</td>
+          <td>fdsafasd</td>
+          <td>
+            <button class="btn btn-info btn-sm">Edit</button>
+            <button class="btn btn-danger btn-sm">Delete</button>
+          </td>
+        </tr>
+        
+ </tbody>
+</table>
+<div>
+    <app-pagination></app-pagination>
+</div>
